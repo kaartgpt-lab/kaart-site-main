@@ -318,14 +318,28 @@ export default function Navbar() {
         </button>
 
         <div className="menu-wrapper relative z-[99999] mx-auto flex max-h-[90vh] max-w-[300px] flex-col gap-8 overflow-y-auto overflow-x-hidden pb-4 sm:max-w-[400px] md:top-14 md:max-h-none md:max-w-[580px] md:gap-16 md:overflow-visible md:pt-0">
-          <MenuList ref={menuItemsRef} onItemClick={closeMenu} />
+          {/* Replace MenuList with direct links */}
+          <ul ref={menuItemsRef} className="flex flex-col gap-6">
+            {desktopLinks.map((l) => {
+              const active = pathname === l.url || pathname.startsWith(l.url + '/')
+              return (
+                <li key={l.title}>
+                  <Link
+                    href={l.url}
+                    onClick={closeMenu}
+                    className={`block text-2xl font-medium tracking-wide transition-colors ${
+                      active ? 'text-white' : 'text-white/70 hover:text-white'
+                    }`}>
+                    {l.title}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </div>
 
         <div className="menu-footer fixed bottom-0 w-full border-t border-white border-opacity-10">
           <div className="menu-footer-content mx-auto flex max-w-[300px] flex-col justify-between py-8 sm:max-w-[400px] md:max-w-[600px] md:flex-row">
-            <p className="mb-4 w-full text-sm text-white md:mb-0 md:w-auto">
-              2261 Market Street #5039 San Francisco, CA 94114
-            </p>
             <SocialIcons />
           </div>
         </div>
