@@ -8,7 +8,7 @@ interface AboutProps {
   marquee?: boolean
 }
 
-const About = ({ marquee = false }: AboutProps) => {
+const Sarthak = ({ marquee = false }: AboutProps) => {
   const { revealRef } = useReveal()
 
   if (marquee) {
@@ -17,8 +17,8 @@ const About = ({ marquee = false }: AboutProps) => {
         <div className="container">
           <RevealWrapper>
             <h3 className="pb-10 sm:pb-20" ref={revealRef}>
-              Kaart Studio helps e-commerce brands redesign, optimize, and scale. With 50+ projects delivered worldwide,
-              we turn your store into a revenue machine.
+              Hi, I’m Sarthak, founder of Kaart Studio. I’ve personally worked with over 40 e-commerce and SaaS brands
+              worldwide, including successful Shark Tank India startups.
             </h3>
           </RevealWrapper>
           <RevealWrapper>
@@ -44,18 +44,16 @@ const About = ({ marquee = false }: AboutProps) => {
         <div className="flex flex-col items-center justify-center lg:items-stretch lg:justify-normal">
           <CircleTextAnimation />
           <h3 className="mx-auto mt-[34px]" ref={revealRef}>
-            We specialize in designing cutting-edge web <br className="hidden sm:block" />
-            experiences that flawlessly blend creativity with <br />
-            innovative technology.
+            Hi, I’m Sarthak, founder of Kaart Studio. I’ve personally worked with over 40 e-commerce and SaaS brands
+            worldwide, including successful Shark Tank India startups.
             <br />
             <br />
-            We provide customized solutions for <br className="hidden sm:block" />
-            enhancing your existing site or building <br className="hidden sm:block" />a brand-new digital platform from
-            the ground up
+            Me and my team brings hands-on experience to every project, ensuring we deliver not just beautiful websites
+            — but superior measurable revenue growth.
           </h3>
         </div>
       </div>
     </section>
   )
 }
-export default About
+export default Sarthak

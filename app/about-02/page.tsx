@@ -8,6 +8,8 @@ import FaqV2 from '@/components/shared/FaqV2'
 import LayoutOne from '@/components/shared/LayoutOne'
 import SkewMarquee from '@/components/shared/SkewMarquee'
 import Video from '@/components/shared/Video'
+import CTA from '@/components/shared/CTA'
+import CtaImageSlider from '@/components/shared/CtaImageSlider'
 
 export const metadata = {
   title: 'About-02',
@@ -24,7 +26,18 @@ const AboutPage = () => {
       <TeamGallery />
       <Clients />
       <FaqV2 />
-      <CtaV2 />
+      <CTA showContactForm>
+        Let’s
+        <CtaImageSlider
+          slides={[
+            { id: '1', img: '/images/agent/01.jpg' },
+            { id: '2', img: '/images/agent/02.jpg' },
+            { id: '3', img: '/images/agent/03.jpg' },
+          ]}
+        />
+        Create
+        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Something Iconic</span>
+      </CTA>
     </LayoutOne>
   )
 }

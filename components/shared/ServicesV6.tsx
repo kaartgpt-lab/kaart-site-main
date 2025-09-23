@@ -78,7 +78,7 @@ const ServicesV6 = () => {
             <span className="rv-badge-text">Services</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="text-appear mx-auto max-w-[770px]">There is a lot we can do. Here is a few.</h2>
+            <h2 className="text-appear mx-auto max-w-[770px]">Struggling with a store that’s not selling?</h2>
           </TextAppearAnimation>
         </div>
         <RevealWrapper className="mx-auto w-full max-w-[1170px] [&>*:not(:last-child)]:mb-6">

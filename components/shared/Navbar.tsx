@@ -9,7 +9,6 @@ import { usePathname } from 'next/navigation'
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 import { SocialIcons } from '@/components/navbarCompo/social-icons'
-import { MenuList } from '../navbarCompo/menu-list'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -166,7 +165,7 @@ export default function Navbar() {
   // If you need to centralize routes, mirror what's inside MenuList.
   const desktopLinks = [
     { title: 'Home', url: '/' },
-    { title: 'About', url: '/about' },
+    { title: 'About', url: '/about-02' },
     { title: 'Services', url: '/services' },
     { title: 'Blog', url: '/blog' },
     { title: 'Projects', url: '/projects' },
@@ -272,7 +271,9 @@ export default function Navbar() {
                     <Link
                       href={l.url}
                       className={`text-sm uppercase tracking-wide transition-colors ${
-                        active ? 'text-white' : 'text-white/70 hover:text-white'
+                        active
+                          ? 'text-black dark:text-white'
+                          : 'text-black/70 hover:text-black dark:text-white/70 dark:hover:text-white'
                       }`}>
                       {l.title}
                     </Link>
@@ -284,15 +285,18 @@ export default function Navbar() {
             {/* Right side: Social (desktop) + Hamburger (mobile) */}
             <div className="flex items-center">
               <div className="hidden lg:block">
-                <SocialIcons />
+                {/* Social icons */}
+                <div className="hidden text-black dark:text-white lg:block">
+                  <SocialIcons />
+                </div>
               </div>
 
               {/* Hamburger only on mobile */}
               <button
                 ref={openBtnRef}
                 onClick={openMenu}
-                className="menu-open relative h-[52px] w-[52px] cursor-pointer before:absolute before:left-1/2 before:top-[20px] before:h-0.5 before:w-8 before:-translate-x-1/2 before:bg-black before:transition-all before:duration-300 before:content-[''] after:absolute after:bottom-[20px] after:left-1/2 after:h-0.5 after:w-8 after:-translate-x-1/2 after:bg-black after:transition-all after:duration-300 after:content-[''] hover:before:top-[18px] hover:after:bottom-[18px] dark:before:bg-white dark:after:bg-white lg:hidden"
                 aria-label="Open Menu"
+                className="menu-open relative h-[52px] w-[52px] cursor-pointer before:absolute before:left-1/2 before:top-[20px] before:h-0.5 before:w-8 before:-translate-x-1/2 before:bg-black before:transition-all before:duration-300 before:content-[''] after:absolute after:bottom-[20px] after:left-1/2 after:h-0.5 after:w-8 after:-translate-x-1/2 after:bg-black after:transition-all after:duration-300 after:content-[''] hover:before:top-[18px] hover:after:bottom-[18px] dark:before:bg-white dark:after:bg-white lg:hidden"
               />
             </div>
           </div>
@@ -304,16 +308,14 @@ export default function Navbar() {
         ref={menuRef}
         data-lenis-prevent="true"
         className="menu fixed right-6 top-0 z-[99999] min-h-screen w-full overflow-y-auto opacity-0 before:absolute before:top-0 before:w-[1px] before:bg-backgroundBody before:bg-opacity-10 before:content-none md:before:left-[40%] md:before:h-screen md:before:content-[''] lg:hidden lg:before:left-[32%] lg:before:h-[calc(100vh-87px)] xl:before:left-[40%] xl:before:h-[calc(100vh-94px)]">
+        {/* Close button (mobile) */}
         <button
           ref={closeBtnRef}
           onClick={closeMenu}
-          className="menu-close sticky left-[89%] top-9 h-[40px] w-[40px] cursor-pointer text-white sm:left-[90%] md:left-[93%]"
+          className="menu-close sticky left-[89%] top-9 h-[40px] w-[40px] cursor-pointer text-black dark:text-white sm:left-[90%] md:left-[93%]"
           aria-label="Close Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50">
-            <path
-              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
-              fill="#fff"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" className="fill-current">
+            <path d="M 7.7 6.3 L 6.3 7.7 L 23.6 25 L 6.3 42.3 L 7.7 43.7 L 25 26.4 L 42.3 43.7 L 43.7 42.3 L 26.4 25 L 43.7 7.7 L 42.3 6.3 L 25 23.6 Z" />
           </svg>
         </button>
 
@@ -328,7 +330,9 @@ export default function Navbar() {
                     href={l.url}
                     onClick={closeMenu}
                     className={`block text-2xl font-medium tracking-wide transition-colors ${
-                      active ? 'text-white' : 'text-white/70 hover:text-white'
+                      active
+                        ? 'text-black dark:text-white'
+                        : 'text-black/70 hover:text-black dark:text-white/70 dark:hover:text-white'
                     }`}>
                     {l.title}
                   </Link>
@@ -340,7 +344,10 @@ export default function Navbar() {
 
         <div className="menu-footer fixed bottom-0 w-full border-t border-white border-opacity-10">
           <div className="menu-footer-content mx-auto flex max-w-[300px] flex-col justify-between py-8 sm:max-w-[400px] md:max-w-[600px] md:flex-row">
-            <SocialIcons />
+            {/* Social icons */}
+            <div className="menu-footer-content mx-auto flex max-w-[300px] flex-col justify-between py-8 text-black dark:text-white sm:max-w-[400px] md:max-w-[600px] md:flex-row">
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </nav>
@@ -348,7 +355,7 @@ export default function Navbar() {
       {/* Mobile overlay backdrop */}
       <div
         ref={menuOverflowRef}
-        className="menu-overflow pointer-events-none fixed inset-0 z-[9999] bg-[rgba(10,10,10,0.95)] backdrop-blur-[25px] lg:hidden"
+        className="menu-overflow pointer-events-none fixed inset-0 z-[9999] bg-white/95 backdrop-blur-[25px] dark:bg-[rgba(10,10,10,0.95)] lg:hidden"
       />
     </>
   )

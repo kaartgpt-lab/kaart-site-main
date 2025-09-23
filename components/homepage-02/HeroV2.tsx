@@ -8,14 +8,14 @@ const HeroV2 = () => {
       <HeroGradientAnimation />
       <RevealWrapper className="container">
         <p className="flex items-center justify-center gap-5 text-sm font-normal uppercase leading-6 tracking-[3px] lg:justify-start">
-          <span>Design Agency</span>
+          <span>Building brands for tomorrow</span>
           <span className="inline-block h-[1px] w-[150px] bg-dark dark:bg-[#ffffffb3]"></span>
-          <span>Rivor</span>
+          <span>Kaart Studio</span>
         </p>
         <h1 className="mt-5 max-lg:text-center sm:mt-10">
-          Transforming Ideas into Digital
-          <i className="mx-1 font-instrument"> Master pieces </i> that Drive
-          <i className="font-instrument"> Success</i>
+          We design Shopify stores that don’t just look good — they convert
+          <i className="mx-1 font-instrument"> 3x better </i>
+          <i className="font-instrument"> </i>
         </h1>
         <ul className="mt-14 flex list-none justify-start">
           <li className="block w-full text-center md:inline-block md:w-auto">
