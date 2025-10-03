@@ -25,7 +25,6 @@ const TextAppearAnimation: FC<AnimatedTextProps> = ({ children, animationOptions
     () => {
       const element = elementRef.current
       if (!element) return
-
       if (hasAnimatedRef.current) return
 
       const setupSplitType = () => {
@@ -85,24 +84,33 @@ const TextAppearAnimation: FC<AnimatedTextProps> = ({ children, animationOptions
       const timeline = createAnimation(words)
       ScrollTrigger.refresh()
 
+      // ✅ Cache element ref for cleanup
+      const el = element
+
       return () => {
         if (timeline && typeof timeline.kill === 'function') {
           timeline.kill()
         }
+        ScrollTrigger.getAll().forEach((trigger) => {
+          if (trigger.vars.trigger === el) {
+            trigger.kill()
+          }
+        })
       }
     },
     { scope: elementRef, dependencies: [] },
   )
 
   useEffect(() => {
+    const el = elementRef.current // ✅ cache here too
     return () => {
       titleTextRef.current?.revert()
       wordSplitRefs.current.forEach((split) => split.revert())
       hasAnimatedRef.current = false
 
-      if (elementRef.current) {
+      if (el) {
         ScrollTrigger.getAll().forEach((trigger) => {
-          if (trigger.vars.trigger === elementRef.current) {
+          if (trigger.vars.trigger === el) {
             trigger.kill()
           }
         })
