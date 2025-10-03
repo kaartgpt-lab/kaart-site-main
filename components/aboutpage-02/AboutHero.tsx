@@ -11,13 +11,19 @@ const AboutHero = () => {
           </h1>
 
           <p className="max-w-[470px]">
-            We are dedicated to transforming ideas impactful solutions. With a focus on innovation excellence we partner
-            with businesses around the globe to help them navigate complex challenges and growth.
+            <p className="text-[30px]">Who we are</p>
+            <br />
+            Kaart Studio is a full-stack design and development agency dedicated to building digital products that
+            scale. From Shopify stores to complex web apps, mobile applications, SaaS platforms, and chatbots — we bring
+            ideas to life with creativity, engineering, and precision. We don’t just design interfaces; we craft
+            experiences.
+            <br />
+            We don’t just ship code; we deliver systems that help brands grow.
           </p>
         </div>
 
-        <h2 className="mb-5 text-6xl sm:text-7xl md:text-8xl lg:text-[156px] xl:text-[236px] xl:leading-[1.1]">
-          Company
+        <h2 className="mb-5 text-6xl sm:text-7xl md:text-8xl lg:text-[156px] xl:text-[186px] xl:leading-[1.1]">
+          Kaart Studio
         </h2>
       </RevealWrapper>
     </section>

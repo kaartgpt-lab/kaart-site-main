@@ -23,8 +23,9 @@ const ServicesV14 = () => {
         </RevealWrapperV2>
         <TextAppearAnimation02>
           <h2 className="text-appear mb-3">
-            Marketing solutions designed for <br />
-            <i className="font-instrument"> maximum impact</i>
+            Our Services
+            {/* <br />
+            <i className="font-instrument"> maximum impact</i> */}
           </h2>
         </TextAppearAnimation02>
         <TextAppearAnimation>

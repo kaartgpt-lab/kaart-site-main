@@ -37,6 +37,13 @@ const AboutPage = () => {
         />
         Create
         <span className="block font-instrument italic max-md:inline-block sm:mt-10">Something Iconic</span>
+        <p className="mt-5 text-balance text-center text-lg leading-[1.4] tracking-[0.32px]">
+          Whether you’re building a new product, redesigning an existing platform, or scaling your store — we’re here to
+          help you make it happen.
+        </p>
+        <h3 className="mt-5 text-balance text-center text-lg font-medium leading-[1.4] tracking-[0.32px]">
+          📧 kaarthq@gmail.com | 📞 +91-7992028684
+        </h3>
       </CTA>
     </LayoutOne>
   )

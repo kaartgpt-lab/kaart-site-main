@@ -2,37 +2,37 @@
   [
     {
       "id": 1,
-      "question": "What does it cost to work with you?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": "Do you only work on Shopify?",
+      "answer": " No. While we specialize in Shopify e-commerce, we also design and build full-stack web apps, mobile apps, SaaS dashboards, and custom digital products."
     },
     {
       "id": 2,
-      "question": "What's your return policy?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": "What types of projects do you take on?",
+      "answer": "We work on both one-off projects (like a full website or app build) and ongoing retainers for CRO-focused improvements, maintenance, and feature delivery."
     }
   ],
   [
     {
       "id": 3,
-      "question": "How do I make a warranty claim?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": "How does a typical project start?",
+      "answer": " Every project begins with a discovery session where we learn about your goals, users, and challenges. From there, we define scope, create a roadmap, and start with design prototypes."
     },
     {
       "id": 4,
-      "question": "Do I have to pay customs fees or duty on my package?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": "Do you provide ongoing support after launch?",
+      "answer": " Yes. We offer maintenance and optimization plans focused on CRO, technical updates, and performance improvements to ensure your product continues to grow."
     }
   ],
   [
     {
       "id": 5,
-      "question": "Where can I change or cancel my order?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": "How long does a project usually take?",
+      "answer": "It depends on complexity. A Shopify store redesign can take 4–6 weeks, while a custom app or SaaS product may take 2–3 months or more. We always share timelines during discovery."
     },
     {
       "id": 6,
-      "question": "How do I track my shipment?",
-      "answer": "If you need to exchange a product, please contact us within 14 days of receiving your order. We will determine the best course of action and guide you through the exchange process."
+      "question": " What’s your pricing model?",
+      "answer": "For one-time projects, we work on a milestone-based custom pricing model. For ongoing support, we offer CRO-focused retainers starting from ₹40,000/month."
     }
   ]
 ]

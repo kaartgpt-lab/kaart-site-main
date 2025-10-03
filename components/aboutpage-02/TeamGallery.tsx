@@ -18,11 +18,9 @@ const TeamGallery = () => {
       <div className="container w-full">
         <div className="mb-10 flex flex-col items-start justify-center gap-x-10 gap-y-2 md:mb-20 md:flex-row md:items-center lg:justify-between">
           <SectionHeader
-            italicTitle="Team"
-            headingTitle="Members"
-            description=" Here’s a template to introduce a team 
-              member in an engaging and professional 
-              way."
+            italicTitle="The"
+            headingTitle="Team"
+            description="We’re a multidisciplinary crew of designers, engineers, and builders led by Sarthak Tiwari, design engineer and CRO specialist. Our team brings expertise across Shopify, SaaS, mobile, and emerging technologies — but what unites us is a passion for creating products people love to use."
           />
         </div>
 

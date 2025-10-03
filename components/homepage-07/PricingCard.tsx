@@ -8,14 +8,11 @@ import RevealWrapperV2 from '../animation/RevealWrapperV2'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
 const designPricingList = [
-  { list: 'Basic Components & variants', feature: true },
-  { list: 'Lifetime updates', feature: true },
-  { list: 'Single user', feature: true },
-  { list: 'Ready-to-use dashboard', feature: false },
-  { list: 'Delivered in milestones', feature: true },
-  { list: 'Premium support', feature: false },
-  { list: 'Invite your team to collaborate', feature: false },
-  { list: 'Managed via Slack and Trello', feature: false },
+  { list: 'Shopify store builds & theme customizations', feature: true },
+  { list: 'Full website or app development', feature: true },
+  { list: 'UX/UI design with prototypes & iterations', feature: true },
+  { list: 'Feature-based milestone delivery', feature: false },
+  { list: 'Premium support during project lifecycle', feature: false },
 ]
 
 const customPricingList = [
@@ -99,18 +96,18 @@ const PricingCard = ({ showHeader = false }: PricingProps) => {
               <img src="/images/pricing-gradient-bg-1.png" className="absolute left-0 top-0" alt="Gradient color" />
               <div>
                 <div>
-                  <h6 className="mb-4 max-md:text-3xl">Design Project</h6>
+                  <h6 className="mb-4 max-md:text-3xl">Design & Development Projects</h6>
                   <p className="text-base">
-                    Ideal for entrepreneurs seeking a cohesive approach for branding, web design, app, 3D, and motion
-                    projects.
+                    Ideal for entrepreneurs and brands who need a tailored solution — from Shopify stores to custom apps
+                    and full digital product builds.
                   </p>
                 </div>
 
                 <div className="flex flex-col items-start gap-x-10 gap-y-3 py-8 md:flex-row md:items-end md:gap-y-6">
-                  <p className="text-6xl leading-[60px] text-secondary dark:text-backgroundBody">Custom</p>
+                  <p className="text-6xl leading-[60px] text-secondary dark:text-backgroundBody">Custom Pricing</p>
                   <p className="text-sm leading-[18px] tracking-[-0.2px]">
-                    Flexible payment schedule, <br />
-                    50% down payment
+                    Flexible payment schedules <br />
+                    (50% upfront)
                   </p>
                 </div>
 

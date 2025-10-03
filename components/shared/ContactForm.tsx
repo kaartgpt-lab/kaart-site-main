@@ -2,14 +2,15 @@ const interestData = [
   { id: 'uiux', value: 'UI/UX Design' },
   { id: 'webdesign', value: 'Web Design' },
   { id: 'webdev', value: 'Web Development' },
-  { id: 'website', value: 'Website Creation' },
-  { id: 'animation', value: 'Animation' },
+  { id: 'shopify', value: 'Shopify' },
+  { id: 'appdev', value: 'App Development' },
+  { id: 'int/auto', value: 'Integration/Automation' },
   { id: 'others', value: 'Others' },
 ]
 const budgetData = [
-  { id: 'budget1', value: '$2k-4k' },
-  { id: 'budget2', value: '$4k-6k' },
-  { id: 'budget3', value: '$6k-8k' },
+  { id: 'budget1', value: ' ₹2–4L' },
+  { id: 'budget2', value: ' ₹4–6L' },
+  { id: 'budget3', value: '₹6L+' },
 ]
 
 const ContactForm = () => {
@@ -75,7 +76,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           name="message"
-          placeholder="Tell us about your project goals and timeline"
+          placeholder="Tell us about your goals, users and timeline"
           className="mt-3 min-h-44 w-full border bg-backgroundBody py-4 pl-5 text-base leading-[1.4] tracking-[0.4px] text-colorText focus:border-primary focus:outline-none dark:border-dark dark:bg-dark md:text-xl"></textarea>
       </div>
 

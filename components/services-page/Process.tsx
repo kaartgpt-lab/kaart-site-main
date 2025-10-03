@@ -19,10 +19,10 @@ const Process = () => {
                 01
               </span>
               <h3 className="mb-5 mt-16 max-md:text-3xl md:leading-[1.2] md:tracking-[-1.68px] md:text-[56PX]">
-                Request
+                Discover
               </h3>
               <p className="text-base leading-[1.4] tracking-[0.32px]">
-                We mostly work on a fixed-bid basis for our projects, focusing on a select few clients at a time.
+                We align on goals, audience, and success metrics. Technical audit + product strategy.
               </p>
             </RevealWrapper>
 
@@ -34,7 +34,7 @@ const Process = () => {
                 Approve
               </h3>
               <p className="text-base leading-[1.4] tracking-[0.32px]">
-                We mostly work on a fixed-bid basis for our projects, focusing on a select few clients at a time.
+                You approve wireframes, scope, and milestones. We lock timelines and ownership.
               </p>
             </RevealWrapper>
 
@@ -46,7 +46,7 @@ const Process = () => {
                 Develop
               </h3>
               <p className="text-base leading-[1.4] tracking-[0.32px]">
-                We mostly work on a fixed-bid basis for our projects, focusing on a select few clients at a time.
+                Design systems + clean, scalable code. Frequent demos and QA on real devices.
               </p>
             </RevealWrapper>
 
@@ -58,7 +58,7 @@ const Process = () => {
                 Deliver
               </h3>
               <p className="text-base leading-[1.4] tracking-[0.32px]">
-                We mostly work on a fixed-bid basis for our projects, focusing on a select few clients at a time.
+                Launch with monitoring, analytics, and a clear post-launch optimization plan.
               </p>
             </RevealWrapper>
           </div>

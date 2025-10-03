@@ -74,10 +74,10 @@ const Clients = () => {
       <div className="container">
         <div className="mb-10 flex flex-col items-start justify-center gap-x-10 gap-y-3 md:mb-20 md:flex-row md:items-end md:justify-between">
           <SectionHeader
-            headingTitle="Trust in us"
-            italicTitle="Have"
+            headingTitle="Trusted"
+            italicTitle="by"
             serviceHeadingColor
-            description="Our agency is your gateway to discovering extraordinary artworks that speak to your aesthetic sensibilities."
+            description="From early-stage startups to global companies, brands trust us to design and build their digital backbone."
           />
         </div>
       </div>

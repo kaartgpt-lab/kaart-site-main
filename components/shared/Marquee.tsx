@@ -56,7 +56,7 @@ const Marquee: React.FC<WithBorderProps> = ({ withBorder }) => {
       ) : (
         <div className="overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
           <RevealWrapper as="p" className="container mb-10 text-wrap text-center lg:mb-20">
-            Trusted by over 100+ fast-growing companies all around the world
+            The team who has worked on 50+ brands till date
           </RevealWrapper>
 
           <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="relative">
@@ -71,7 +71,7 @@ const Marquee: React.FC<WithBorderProps> = ({ withBorder }) => {
               ))}
             </div>
           </div>
-          <RevealWrapper as="ul" className="reveal-me container mt-7 grid justify-self-center max-md:w-full md:mt-14">
+          {/* <RevealWrapper as="ul" className="reveal-me container mt-7 grid justify-self-center max-md:w-full md:mt-14">
             <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
               <Link href="#" className="rv-button rv-button-white block md:inline-block">
                 <div className="rv-button-top">
@@ -82,7 +82,7 @@ const Marquee: React.FC<WithBorderProps> = ({ withBorder }) => {
                 </div>
               </Link>
             </li>
-          </RevealWrapper>
+          </RevealWrapper> */}
         </div>
       )}
     </section>

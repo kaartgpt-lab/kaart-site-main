@@ -17,7 +17,7 @@ import TestimonialV2 from '@/components/shared/TestimonialV2'
 import Sarthak from '@/components/shared/Sarthak'
 
 export const metadata = {
-  title: 'Digital Solutions Agency - Rivor',
+  title: 'Kaart Studio',
 }
 
 const Home = () => {

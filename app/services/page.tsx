@@ -33,6 +33,10 @@ const ServicesPage = () => {
         />
         Create
         <span className="block font-instrument italic max-md:inline-block sm:mt-10">Something Iconic</span>
+        <p className="mt-5 text-balance text-center text-lg leading-[1.4] tracking-[0.32px]">
+          Tell us about your project — Shopify store, web app, mobile app, or automation — and we’ll propose the most
+          effective build plan.
+        </p>
       </CTA>
     </LayoutOne>
   )

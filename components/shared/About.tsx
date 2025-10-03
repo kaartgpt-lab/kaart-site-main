@@ -25,14 +25,14 @@ const About = ({ marquee = false }: AboutProps) => {
             <CircleTextAnimation />
           </RevealWrapper>
 
-          <div className="flex flex-auto flex-col items-center justify-between gap-x-8 gap-y-14 pt-14 sm:pt-[70px] md:flex-row md:pt-[100px] xl:gap-x-28">
+          {/* <div className="flex flex-auto flex-col items-center justify-between gap-x-8 gap-y-14 pt-14 sm:pt-[70px] md:flex-row md:pt-[100px] xl:gap-x-28">
             <RevealWrapper className="relative w-full overflow-hidden">
               <div className="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-backgroundBody to-transparent dark:from-dark"></div>
               <div className="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-backgroundBody to-transparent dark:from-dark"></div>
 
               <CompanyLogosMarquee />
             </RevealWrapper>
-          </div>
+          </div> */}
         </div>
       </section>
     )

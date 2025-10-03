@@ -9,8 +9,8 @@ import TextAppearAnimation from '../animation/TextAppearAnimation'
 const servicesData = [
   {
     id: 1,
-    title: 'UX & Research',
-    subtitle: 'Creating a remarkable experience for every individual',
+    title: 'Product Design (UX & UI)',
+    subtitle: 'User research, wireframing, prototypes, and polished visuals.',
     items: [
       'User Research & Market Analysis',
       'Prototyping',
@@ -26,7 +26,7 @@ const servicesData = [
   {
     id: 2,
     title: 'Web Development',
-    subtitle: 'Creating a remarkable experience for every individual',
+    subtitle: ' Full-stack builds using modern frameworks (MERN/MEAN, Next.js, etc.).',
     items: [
       'User Research & Market Analysis',
       'Prototyping',
@@ -38,8 +38,8 @@ const servicesData = [
   },
   {
     id: 3,
-    title: 'Web Design',
-    subtitle: 'Creating a remarkable experience for every individual',
+    title: 'Mobile App development',
+    subtitle: 'Native and cross-platform apps tailored to user needs.',
     items: [
       'User Research & Market Analysis',
       'Prototyping',
@@ -51,8 +51,26 @@ const servicesData = [
   },
   {
     id: 4,
-    title: 'Wordpress',
-    subtitle: 'Creating a remarkable experience for every individual',
+    title: 'E-Commerce Solutions',
+    subtitle: 'Shopify stores, custom themes, CRO optimization, and integrations.',
+    items: ['User Research & Market Analysis', 'Prototyping', 'Concept Ideation', 'Sketching & Wireframing'],
+  },
+  {
+    id: 5,
+    title: 'Saas & dashboards',
+    subtitle: 'Tools and platforms that simplify complex workflows.',
+    items: ['User Research & Market Analysis', 'Prototyping', 'Concept Ideation', 'Sketching & Wireframing'],
+  },
+  {
+    id: 6,
+    title: 'Chatbots & Automation',
+    subtitle: ' Conversational experiences and automations to scale support and sales.',
+    items: ['User Research & Market Analysis', 'Prototyping', 'Concept Ideation', 'Sketching & Wireframing'],
+  },
+  {
+    id: 7,
+    title: 'AI-driven Innovation',
+    subtitle: ' Smarter product imagery, personalization, and workflow optimization.',
     items: ['User Research & Market Analysis', 'Prototyping', 'Concept Ideation', 'Sketching & Wireframing'],
   },
 ]
@@ -74,18 +92,18 @@ const ServicesV3 = () => {
           <div className="flex-1">
             <TextAppearAnimation>
               <h2 className="text-appear max-lg:leading-[1.33]">
-                <span className="font-instrument italic lg:text-[65px]">Cool </span>
-                services
+                <span className="font-instrument italic lg:text-[65px]">What </span>
+                We Do
               </h2>
             </TextAppearAnimation>
           </div>
           <div className="flex-1 max-md:w-full md:self-end">
-            <TextAppearAnimation>
+            {/* <TextAppearAnimation>
               <p className="text-appear max-w-lg md:justify-self-end md:text-right">
                 For a comprehensive services section, outline your offerings in a clear and organized manner. Here’s a
                 general template you can use.
               </p>
-            </TextAppearAnimation>
+            </TextAppearAnimation> */}
             <RevealWrapper as="ul" className="mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
                 <Link href="/services" className="rv-button rv-button-white block md:inline-block">

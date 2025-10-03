@@ -43,14 +43,16 @@ const Sarthak = ({ marquee = false }: AboutProps) => {
       <div className="container">
         <div className="flex flex-col items-center justify-center lg:items-stretch lg:justify-normal">
           <CircleTextAnimation />
-          <h3 className="mx-auto mt-[34px]" ref={revealRef}>
-            Hi, I’m Sarthak, founder of Kaart Studio. I’ve personally worked with over 40 e-commerce and SaaS brands
-            worldwide, including successful Shark Tank India startups.
-            <br />
-            <br />
-            Me and my team brings hands-on experience to every project, ensuring we deliver not just beautiful websites
-            — but superior measurable revenue growth.
-          </h3>
+          <RevealWrapper>
+            <h3 className="mx-auto mt-[34px]" ref={revealRef}>
+              Hi, I’m Sarthak, founder of Kaart Studio. I’ve personally worked with over 40 e-commerce and SaaS brands
+              worldwide, including successful Shark Tank India startups.
+              <br />
+              <br />
+              Me and my team brings hands-on experience to every project, ensuring we deliver not just beautiful
+              websites — but superior measurable revenue growth.
+            </h3>
+          </RevealWrapper>
         </div>
       </div>
     </section>

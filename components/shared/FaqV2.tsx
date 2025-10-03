@@ -19,12 +19,7 @@ const FaqV2: FC<PropsType> = ({ titleChange = false }) => {
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container">
         <div className="mb-10 flex flex-col items-start justify-center gap-x-10 gap-y-4 md:mb-20 md:flex-row md:items-end lg:justify-between">
-          <SectionHeader
-            headingTitle="Asked Us"
-            titleChange={titleChange}
-            italicTitle="People"
-            description="When detailing testimonials it's important to include key elements that provide context and authenticity"
-          />
+          <SectionHeader headingTitle="FAQs" titleChange={titleChange} description="" />
         </div>
 
         <div className="mx-auto grid w-full grid-cols-1 items-start gap-7 md:grid-cols-2 lg:grid-cols-3">

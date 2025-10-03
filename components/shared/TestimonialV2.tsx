@@ -86,7 +86,7 @@ const TestimonialV2 = () => {
         </RevealWrapper>
       </div>
 
-      <RevealWrapper>
+      {/* <RevealWrapper>
         <div className="relative mt-[30px]">
           <div className="absolute left-0 top-0 z-40 h-full w-[25%] bg-gradient-to-r from-backgroundBody to-transparent dark:from-dark-gradient"></div>
           <div className="absolute right-0 top-0 z-40 h-full w-[25%] bg-gradient-to-l from-backgroundBody to-transparent dark:from-dark-gradient"></div>
@@ -151,7 +151,7 @@ const TestimonialV2 = () => {
             </div>
           </Marquee>
         </div>
-      </RevealWrapper>
+      </RevealWrapper> */}
     </section>
   )
 }
