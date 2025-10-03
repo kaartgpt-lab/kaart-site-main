@@ -56,7 +56,7 @@ const Marquee: React.FC<WithBorderProps> = ({ withBorder }) => {
       ) : (
         <div className="overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
           <RevealWrapper as="p" className="container mb-10 text-wrap text-center lg:mb-20">
-            The team who has worked on 50+ brands till date
+            The team who has worked on 50+ brands till date
           </RevealWrapper>
 
           <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="relative">
