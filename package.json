@@ -14,7 +14,6 @@
     "@gsap/react": "^2.1.1",
     "@radix-ui/react-dialog": "^1.1.10",
     "@radix-ui/react-visually-hidden": "^1.2.0",
-    "@types/matter-js": "^0.19.8",
     "clsx": "^2.1.1",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
@@ -36,9 +35,10 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
+    "@types/matter-js": "^0.20.2",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",

@@ -15,7 +15,7 @@ import PortfolioV3 from '@/components/homepage-03/PortfolioV3'
 import PricingCard from '@/components/homepage-07/PricingCard'
 import TestimonialV2 from '@/components/shared/TestimonialV2'
 import Sarthak from '@/components/shared/Sarthak'
-
+import SkewMarquee from '@/components/shared/SkewMarquee'
 export const metadata = {
   title: 'Kaart Studio',
 }
@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <LayoutOne>
       <HeroV2 />
-      <Video />
+      <SkewMarquee  />
       <About marquee={true} />
       <Marquee withBorder={false} />
       <ServicesV6 />

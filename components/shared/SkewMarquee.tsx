@@ -9,19 +9,19 @@ import { useRef } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
 const MARQUEE_IMAGES = [
-  { id: 1, src: '/images/marquee-img/hero-marquee-01.png' },
-  { id: 2, src: '/images/marquee-img/hero-marquee-02.png' },
-  { id: 3, src: '/images/marquee-img/hero-marquee-03.png' },
-  { id: 4, src: '/images/marquee-img/hero-marquee-04.png' },
-  { id: 5, src: '/images/marquee-img/hero-marquee-05.png' },
-  { id: 6, src: '/images/marquee-img/hero-marquee-06.png' },
-  { id: 7, src: '/images/marquee-img/hero-marquee-01.png' },
-  { id: 8, src: '/images/marquee-img/hero-marquee-02.png' },
-  { id: 9, src: '/images/marquee-img/hero-marquee-03.png' },
-  { id: 10, src: '/images/marquee-img/hero-marquee-04.png' },
-  { id: 11, src: '/images/marquee-img/hero-marquee-05.png' },
-  { id: 12, src: '/images/marquee-img/hero-marquee-06.png' },
-]
+  { id: 1, src: "/images/skew/Frame 2121457455.png" },
+  { id: 2, src: "/images/skew/Frame 2121457456.png" },
+  { id: 3, src: "/images/skew/Frame 2121457457.png" },
+  { id: 4, src: "/images/skew/Frame 2121457458.png" },
+  { id: 5, src: "/images/skew/Frame 2121457459.png" },
+  { id: 6, src: "/images/skew/Frame 2121457460.png" },
+  { id: 7, src: "/images/skew/Frame 2121457461.png" },
+  { id: 8, src: "/images/skew/Frame 2121457462.png" },
+  { id: 9, src: "/images/skew/Frame 2121457455.png" },
+  { id: 10, src: "/images/skew/Frame 2121457456.png" },
+  { id: 11, src: "/images/skew/Frame 2121457457.png" },
+  { id: 12, src: "/images/skew/Frame 2121457458.png" },
+];
 
 const SkewMarquee = () => {
   const containerRef = useRef<HTMLDivElement>(null)
