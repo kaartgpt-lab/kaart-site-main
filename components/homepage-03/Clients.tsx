@@ -8,12 +8,12 @@ import companyClient7 from '@/public/images/icons/company/client-7.svg'
 import companyClient8 from '@/public/images/icons/company/client-8.svg'
 import companyClient9 from '@/public/images/icons/company/client-9.svg'
 import SectionHeader from '../shared/SectionHeader'
-
+import OurAchievement from '@/components/homepage-09/OurAchievement'
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 import RevealWrapper from '../animation/RevealWrapper'
 import SwiperSlider from './SwiperSlider'
-
+import Link from 'next/link'
 const company = [
   {
     id: 1,
@@ -70,41 +70,20 @@ const reverseCompany = [
 
 const Clients = () => {
   return (
-    <section className="relative mb-14 mt-14 overflow-hidden bg-dark py-20 dark:py-0 md:mb-16 md:mt-16 lg:mb-[88px] lg:mt-[88px] lg:py-[120px] dark:lg:py-0 xl:mb-[100px] xl:mt-[100px]">
+    <section className="relative mb-14 mt-14 overflow-hidden dark:bg-dark bg-white md:mb-16 md:mt-16 lg:mb-[88px] lg:mt-[88px] lg:py-[100px] dark:lg:py-[100px] xl:mb-[100px] xl:mt-[100px]">
       <div className="container">
         <div className="mb-10 flex flex-col items-start justify-center gap-x-10 gap-y-3 md:mb-20 md:flex-row md:items-end md:justify-between">
           <SectionHeader
-            headingTitle="Trusted"
-            italicTitle="by"
+            headingTitle="satisfied clients"
+            italicTitle="Proven success"
             serviceHeadingColor
-            description="From early-stage startups to global companies, brands trust us to design and build their digital backbone."
+            description="We create more than apps—we create digital experiences."
           />
         </div>
       </div>
-      <RevealWrapper>
-        <Marquee speed={70} pauseOnHover>
-          <div className="flex items-center justify-between gap-x-20 py-8 md:gap-x-36">
-            {company.map((client) => (
-              <div key={client.id} className="first:ml-20 md:first:ml-36">
-                <Image src={client.logo} alt="client Logo" />
-              </div>
-            ))}
-          </div>
-        </Marquee>
-      </RevealWrapper>
 
-      <RevealWrapper>
-        <Marquee speed={70} pauseOnHover direction="right">
-          <div className="flex items-center justify-between gap-x-20 py-8 md:gap-x-36">
-            {reverseCompany.map((client) => (
-              <div key={client.id} className="first:ml-20 md:first:ml-36">
-                <Image src={client.logo} alt="client Logo" />
-              </div>
-            ))}
-          </div>
-        </Marquee>
-      </RevealWrapper>
-      <SwiperSlider />
+      <OurAchievement />
+      {/* <SwiperSlider /> */}
     </section>
   )
 }

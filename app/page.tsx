@@ -16,6 +16,8 @@ import PricingCard from '@/components/homepage-07/PricingCard'
 import TestimonialV2 from '@/components/shared/TestimonialV2'
 import Sarthak from '@/components/shared/Sarthak'
 import SkewMarquee from '@/components/shared/SkewMarquee'
+import Clients from '@/components/homepage-03/Clients'
+
 export const metadata = {
   title: 'Kaart Studio',
 }
@@ -30,8 +32,8 @@ const Home = () => {
       <ServicesV6 />
       <ProcessV5 />
       <PortfolioV3 />
-      <TestimonialV2 />
-      <PricingCard />
+      <Clients />
+      {/* <PricingCard /> */}
       <Sarthak />
       <CTA showContactForm>
         Let’s

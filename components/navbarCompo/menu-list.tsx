@@ -8,77 +8,114 @@ import { forwardRef, useEffect, useRef, useState } from 'react'
 interface MenuItemProps {
   title: string
   url: string
-  items?: { title: string; url: string; isActive?: boolean }[]
+  items?: { title: string; url: string; isActive?: boolean; bio: string[] }[]
   isActive?: boolean
 }
 
 const menuItems: MenuItemProps[] = [
   {
-    title: 'Home',
-    url: '/',
-    // items: [
-    //   { title: 'Homepage 01 - Design Agency', url: '/' },
-    //   { title: 'Homepage 02- Digital Solutions Agency', url: '/home-02' },
-    //   { title: 'Homepage 03 -  Portfolio', url: '/home-03' },
-    //   { title: 'Homepage 04 -  Photography Studio', url: '/home-04' },
-    //   { title: 'Homepage 05 -  SEO Agency', url: '/home-05' },
-    //   { title: 'Homepage 06 -  Creative Agency', url: '/home-06' },
-    //   { title: 'Homepage 07 -  Design Studio', url: '/home-07' },
-    //   { title: 'Homepage 08 -  Business Solutions', url: '/home-08' },
-    //   { title: 'Homepage 09 -  Personal Branding', url: '/home-09' },
-    //   { title: 'Homepage 10 -  Full Service Agency', url: '/home-10' },
-    //   { title: 'Homepage 11 -  Video Production', url: '/home-11' },
-    //   { title: 'Homepage 12 -  AI Agency', url: '/home-12' },
-    //   { title: 'Homepage 13 -  Travel Agency', url: '/home-13' },
-    //   { title: 'Homepage 14 -  Film Production Agency', url: '/home-14' },
-    //   { title: 'Homepage 15 -  Branding Agency', url: '/home-15' },
-    //   { title: 'Homepage 16 -  Marketing Agency', url: '/home-16' },
-    //   { title: 'Homepage 17 -  App Development Agency', url: '/home-17' },
-    //   { title: 'Homepage 18 -  Copywriting Agency', url: '/home-18' },
-    //   { title: 'Homepage 19 -  Brand Strategy', url: '/home-19' },
-    //   { title: 'Homepage 20 -  Social Media Agency', url: '/home-20' },
-    //   { title: 'Homepage 21 -  Law Firm Agency', url: '/home-21' },
-    //   { title: 'Homepage 22 -  Event Planning Agency', url: '/home-22' },
-    //   { title: 'Homepage 23 -  Insurance Agency', url: '/home-23' },
-    //   { title: 'Homepage 24 -  Management Agency', url: '/home-24' },
-    //   { title: 'Homepage 25 -  Communications Agency', url: '/home-25' },
-    // ],
-  },
-  {
     title: 'About',
-    url: '/about',
-    // items: [
-    //   { title: 'About', url: '/about' },
-    //   { title: 'About 02', url: '/about-02' },
-    // ],
+    url: '#',
+    items: [
+      {
+        title: 'About Company',
+        url: '/about',
+        bio: [
+          'Crestify was built from years of working closely with founders and seeing where most products struggled — not because of weak execution, but because of unclear structure.',
+          'We focus on helping teams think deeply before building, defining systems that can evolve over time rather than needing constant rebuilding.',
+          'This page shares our philosophy, journey, and the people behind our work.',
+        ],
+      },
+    ],
   },
   {
     title: 'Services',
     url: '#',
-    // items: [
-    //   { title: 'Services', url: '/services' },
-    //   { title: 'Services Details', url: '/services/media' },
-    // ],
+    items: [
+      {
+        title: 'What We Do',
+        url: '/services',
+        bio: [
+          'Our work spans the full lifecycle of building digital systems — from early product strategy and architecture to design, development, integrations, and AI-driven capabilities.',
+          'Rather than offering isolated services, we approach each engagement as part of a larger system-building process.',
+          'Explore how we help teams turn complex ideas into reliable, scalable products.',
+        ],
+      },
+    ],
   },
   {
     title: 'Blog',
     url: '#',
-    // items: [
-    //   { title: 'AI Blog', url: '/ai-blog' },
-    //   { title: 'SEO Blog', url: '/seo-blog' },
-    //   { title: 'Blog Details', url: '/seo-blog/the-evolution-of-minimalist-design' },
-    // ],
+    items: [
+      {
+        title: 'Insights & Thinking',
+        url: '/seo-blog',
+        bio: [
+          'This is where we share lessons from real-world product building — covering topics like system architecture, ecommerce execution, product strategy, and scaling challenges.',
+          'Our writing reflects practical experiences working alongside founders, not abstract theories.',
+          'It’s a space to understand how we think about building.',
+        ],
+      },
+    ],
   },
   {
     title: 'Projects',
     url: '#',
-    // items: [
-    //   { title: 'Design Agency', url: '/design-agency' },
-    //   { title: 'Digital Agency', url: '/digital-agency/project' },
-    //   { title: 'Case Study', url: '/portfolio-agency/case-study' },
-    //   { title: 'Project Details', url: '/design-agency/project-nexus' },
-    //   { title: 'Project Details 02', url: '/digital-agency/project/project-nexus' },
-    // ],
+    items: [
+      {
+        title: 'Selected Work',
+        url: '/digital-agency/project',
+        bio: [
+          'Here you’ll find a selection of systems we’ve helped design and build — spanning ecommerce platforms, SaaS products, internal tools, and data-driven applications.',
+          'Some work is public, while much operates quietly behind the scenes.',
+          'What connects them all is a focus on structure, reliability, and long-term performance.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Career',
+    url: '#',
+    items: [
+      {
+        title: 'Work With Us',
+        url: '/career',
+        bio: [
+          'Crestify operates as a small, focused team that values thoughtful building over rapid volume.',
+          'We look for people who enjoy solving complex problems, working closely with founders, and contributing to systems that evolve over time.',
+          'If you care about building things that truly make sense, you’ll feel at home here.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Team',
+    url: '#',
+    items: [
+      {
+        title: 'The People',
+        url: '/team',
+        bio: [
+          'Behind every system we build is a collaborative group of product thinkers, designers, and engineers working closely together.',
+          'We operate with a hands-on approach, staying deeply involved in both the thinking and execution stages of every project.',
+          'Meet the people who bring Crestify’s philosophy to life.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Faq',
+    url: '#',
+    items: [
+      {
+        title: 'Common Questions',
+        url: '/faq',
+        bio: [
+          'Most teams approach us with similar questions — about when to involve us, how collaborations typically work, and what to expect from the engagement process.',
+          'This section addresses those questions to help you better understand how we operate and whether there’s a strong fit.',
+        ],
+      },
+    ],
   },
 ]
 
@@ -89,11 +126,14 @@ interface MenuListProps {
 export const MenuList = forwardRef<HTMLUListElement, MenuListProps>((props, ref) => {
   const { onItemClick } = props
   const pathname = usePathname()
+
   const [activeItems, setActiveItems] = useState<string[]>([])
+  const [lockedItem, setLockedItem] = useState<string | null>(null)
   const [initialLoad, setInitialLoad] = useState(true)
+
   const dropdownRefsMap = useRef(new Map<string, HTMLUListElement | null>())
 
-  //  initial active item current path
+  // Set active based on current route
   useEffect(() => {
     let foundParent = false
 
@@ -105,12 +145,12 @@ export const MenuList = forwardRef<HTMLUListElement, MenuListProps>((props, ref)
 
         if (activeSubItem) {
           setActiveItems([item.title])
+          setLockedItem(item.title)
           foundParent = true
         }
       }
     })
 
-    // If no parent found but we're on a top-level path
     if (!foundParent) {
       const topLevelMatch = menuItems.find(
         (item) => pathname === item.url || (item.url !== '#' && pathname.startsWith(item.url + '/')),
@@ -118,80 +158,43 @@ export const MenuList = forwardRef<HTMLUListElement, MenuListProps>((props, ref)
 
       if (topLevelMatch) {
         setActiveItems([topLevelMatch.title])
+        setLockedItem(topLevelMatch.title)
       }
-    }
-
-    if (pathname === '/') {
-      setActiveItems(['Home'])
     }
 
     setInitialLoad(false)
   }, [pathname])
 
-  useEffect(() => {
-    if (initialLoad && pathname === '/') {
-      setActiveItems(['Home'])
-
-      setTimeout(() => {
-        const homeDropdown = dropdownRefsMap.current.get('Home')
-        if (homeDropdown) {
-          gsap.set(homeDropdown, { display: 'block', autoAlpha: 1, x: 0 })
-        }
-      }, 100)
-    }
-  }, [initialLoad, pathname])
-
-  // Handle dropdown animations
+  // GSAP dropdown animation
   useEffect(() => {
     menuItems.forEach((item) => {
       const dropdownRef = dropdownRefsMap.current.get(item.title)
-      if (dropdownRef) {
-        if (activeItems.includes(item.title)) {
-          // Show dropdown
-          gsap.set(dropdownRef, { display: 'block', autoAlpha: 0, x: 10 })
-          gsap.to(dropdownRef, {
-            autoAlpha: 1,
-            x: 0,
-            duration: 0.2,
-            ease: 'power3.in',
-            stagger: {
-              amount: 0.1,
-              ease: 'back.out(1.7)',
-            },
-          })
-        } else {
-          // Hide dropdown
-          gsap.to(dropdownRef, {
-            autoAlpha: 0,
-            x: 10,
-            duration: 0.1,
-            ease: 'power3.out',
-            onComplete: () => {
-              gsap.set(dropdownRef, {})
-            },
-          })
-        }
+      if (!dropdownRef) return
+
+      if (activeItems.includes(item.title)) {
+        gsap.set(dropdownRef, { display: 'block', autoAlpha: 0, x: 10 })
+        gsap.to(dropdownRef, {
+          autoAlpha: 1,
+          x: 0,
+          duration: 0.2,
+          ease: 'power3.in',
+        })
+      } else {
+        gsap.to(dropdownRef, {
+          autoAlpha: 0,
+          x: 10,
+          duration: 0.15,
+          ease: 'power3.out',
+          onComplete: () => {
+            gsap.set(dropdownRef, { display: 'none' })
+          },
+        })
       }
     })
   }, [activeItems])
 
-  const handleDropdownClick = (title: string) => {
-    if (window.innerWidth > 368) {
-      setActiveItems((prev) => (prev.includes(title) ? [] : [title]))
-    } else {
-      setActiveItems((prev) => (prev.includes(title) ? prev.filter((item) => item !== title) : [...prev, title]))
-    }
-  }
-
   const setDropdownRef = (el: HTMLUListElement | null, title: string) => {
-    if (el) {
-      dropdownRefsMap.current.set(title, el)
-
-      // If this is the Home dropdown and we're on the homepage, make it visible immediately
-      if (title === 'Home' && pathname === '/' && initialLoad) {
-        gsap.set(el, { display: 'block', autoAlpha: 1, x: 0 })
-      }
-    }
+    if (el) dropdownRefsMap.current.set(title, el)
   }
 
   const isLinkActive = (url: string) => {
@@ -206,17 +209,39 @@ export const MenuList = forwardRef<HTMLUListElement, MenuListProps>((props, ref)
           className={`menu-list-item menu-list-item-anchor ${activeItems.includes(item.title) ? 'active' : ''}`}>
           <a
             href={item.url}
+            onMouseEnter={() => {
+              if (window.innerWidth > 768 && !lockedItem) {
+                setActiveItems([item.title])
+              }
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth > 768 && !lockedItem) {
+                setActiveItems([])
+              }
+            }}
             onClick={(e) => {
               e.preventDefault()
-              handleDropdownClick(item.title)
+
+              if (lockedItem === item.title) {
+                setLockedItem(null)
+                setActiveItems([])
+              } else {
+                setLockedItem(item.title)
+                setActiveItems([item.title])
+              }
             }}
             className="menu-list-item-text text-[28px] leading-[70px] text-white md:text-[42px] xl:text-[56px] xl:leading-[90px]">
             {item.title}
           </a>
+
           {item.items && (
             <ul
               ref={(el) => setDropdownRef(el, item.title)}
-              className={`menu-list-item-dropdown relative left-0 h-fit max-h-[60vh] w-full gap-x-4 overflow-y-auto md:absolute md:left-[48%] md:max-h-none md:w-[350px] md:overflow-visible md:pb-0 lg:left-[33%] lg:w-[650px] xl:left-[44%] ${item.title === 'Home' ? '!grid !grid-cols-1 lg:-mt-[70px] lg:!grid-cols-2' : '!grid !grid-cols-1 lg:top-5'} ${activeItems.includes(item.title) || (item.title === 'Home' && pathname === '/' && initialLoad) ? 'block' : 'hidden'} `}>
+              className={`menu-list-item-dropdown relative left-0 h-fit max-h-[60vh] w-full gap-x-4 overflow-y-auto md:absolute md:left-[48%] md:max-h-none md:w-[350px] md:overflow-visible md:pb-0 lg:left-[33%] lg:w-[650px] xl:left-[44%] ${
+                item.title === 'Home'
+                  ? '!grid !grid-cols-1 lg:-mt-[70px] lg:!grid-cols-2'
+                  : '!grid !grid-cols-1 lg:top-5'
+              } ${activeItems.includes(item.title) ? 'block' : 'hidden'}`}>
               {item.items.map((subItem) => (
                 <li key={subItem.title}>
                   <Link
@@ -224,18 +249,21 @@ export const MenuList = forwardRef<HTMLUListElement, MenuListProps>((props, ref)
                     onClick={() => {
                       onItemClick && onItemClick()
                     }}
-                    className={`menu-list-item-dropdown-list inline-block pb-1 pl-3 text-base leading-8 text-white md:text-lg md:leading-[50px] ${
+                    className={`menu-list-item-dropdown-list inline-block pb-1 pl-3 text-base leading-8 text-white hover:text-[#12D8CC] md:text-3xl md:leading-[50px] ${
                       isLinkActive(subItem.url) ? 'active' : ''
                     }`}>
-                    {subItem.title.includes('-') ? (
-                      <>
-                        {subItem.title.split('-')[0]}-
-                        <i className="font-instrument italic text-inherit">{subItem.title.split('-')[1]}</i>
-                      </>
-                    ) : (
-                      subItem.title
-                    )}
+                    {subItem.title}
                   </Link>
+                  <br />
+                  <br />
+                  {subItem.bio.map((point, index) => (
+                    <p key={index}>
+                      <p key={index} className="text-sm text-gray-400">
+                        {point}
+                      </p>
+                      <br />
+                    </p>
+                  ))}
                 </li>
               ))}
             </ul>
