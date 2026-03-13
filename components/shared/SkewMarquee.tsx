@@ -29,13 +29,11 @@ const SkewMarquee = () => {
 
   function createMarqueeScroll(target: HTMLElement, partSelector: string) {
     const items = gsap.utils.toArray<HTMLElement>(partSelector)
-
-    const itemCount = items.length / 2
     const totalWidth = target.scrollWidth / 2
 
     gsap.to(target, {
       x: `-=${totalWidth}`,
-      duration: itemCount * 2,
+      duration: items.length,
       ease: 'none',
       repeat: -1,
       modifiers: {
@@ -57,7 +55,7 @@ const SkewMarquee = () => {
             scrub: false,
             once: true,
           },
-          y: 200,
+          y: 100,
           opacity: 0,
           duration: 1.5,
           ease: 'power3.out',
@@ -68,22 +66,48 @@ const SkewMarquee = () => {
   )
 
   return (
-    <section className="relative w-full pb-16 pt-24 lg:pb-48">
+    /* Added overflow-hidden to the section to stop horizontal scroll */
+    <section className="relative w-full overflow-hidden pb-16 pt-24 lg:pb-48">
       <div
         ref={containerRef}
+        className="marquee-container"
         style={{
-          transform:
-            'translate3d(-200px, 0px, 0px) scale3d(1, 1, 1) rotateX(30deg) rotateY(17deg) rotateZ(342deg) skew(7deg, 359deg)',
+          /* Changed -200px to -50px on mobile via a CSS variable approach 
+             or just using a standard transform that is less aggressive 
+          */
+          transform: 'rotateX(30deg) rotateY(17deg) rotateZ(342deg) skew(7deg, 359deg)',
           transformStyle: 'preserve-3d',
+          marginLeft: '-10%' // This helps center the skewed content without hard pixel offsets
         }}>
-        <div ref={marqueeRef} className="flex flex-nowrap gap-5">
+        <div ref={marqueeRef} className="flex flex-nowrap gap-3 md:gap-5">
           {MARQUEE_IMAGES.map((img) => (
             <figure key={img.id} className="marquee-part z-50 flex flex-shrink-0 items-center justify-center">
-              <Image width={370} height={400} src={img.src} alt={`Marquee ${img.id}`} />
+              {/* Added responsive sizing: smaller on mobile, original on desktop */}
+              <div className="relative h-[220px] w-[200px] md:h-[400px] md:w-[370px]">
+                <Image 
+                  fill
+                  src={img.src} 
+                  alt={`Marquee ${img.id}`} 
+                  className="object-contain"
+                  sizes="(max-width: 768px) 200px, 370px"
+                />
+              </div>
             </figure>
           ))}
         </div>
       </div>
+
+      {/* Inline style fix for the specific mobile offset */}
+      <style jsx>{`
+        .marquee-container {
+          translate: -50px 0px;
+        }
+        @media (min-width: 1024px) {
+          .marquee-container {
+            translate: -200px 0px;
+          }
+        }
+      `}</style>
     </section>
   )
 }
